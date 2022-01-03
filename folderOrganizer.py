@@ -34,9 +34,9 @@ def order(path, fileList, extensions):
                 shutil.move(path + file, path + 'Otros')
 
 def main():
-    extensions = (('Documentos', '.docx', '.txt', '.doc', '.pdf', '.pptx', '.ppt', '.tex', '.xls', '.xlsx', '.csv'), 
+    extensions = (('Documentos', '.docx', '.txt', '.doc', '.ods', '.pdf', '.pptx', '.ppt', '.tex', '.xls', '.xlsx', '.csv', '.odt'), 
                         ('Fotos', '.png', '.jpg', '.jpeg', '.gif', '.ico', '.bmp', '.svg'), 
-                        ('Audio', '.mp3', '.wav', '.wma', '.ogg', '.flac'),
+                        ('Audio', '.mp3', '.wav', '.wma', '.ogg', '.flac', '.m4a'),
                         ('Video', '.mov', '.mp4', '.avi', '.mkv', '.wmv'),
                         ('Ejecutable', '.exe', '.msi'), 
                         ('Comprimidos', '.rar', '.zip', '.7z', '.rar5'))
@@ -62,9 +62,9 @@ def main():
             print('''\tPrograma escrito con Python 3.10.1
             \n
             Separa archivos por: 
-            a) Documentos: .docx; .txt; .doc; .pdf; .pptx; .ppt; .tex; .xls; .xlsx; .csv
+            a) Documentos: .docx; .txt; .doc; .ods; .pdf; .pptx; .ppt; .tex; .xls; .xlsx; .csv; .odt
             b) Fotos: .png; .jpg/.jpeg; .gif; .ico; .bmp; .svg
-            c) Audio: .mp3; .wav; .wma; .ogg; .flac
+            c) Audio: .mp3; .wav; .wma; .ogg; .flac; .m4a
             d) Video: .mov; .mp4; .avi; .mkv; .wmv
             e) Ejecutable: .exe; .msi
             f) Comprimidos: .rar; .zip; .7z; .rar5
