@@ -39,10 +39,7 @@ class App(tk.Tk):
         file_menu.add_command(label='Exit', command=self.quit)
         menubar.add_cascade(label='File', menu=file_menu)
         info_menu = tk.Menu(menubar, tearoff=0)
-        info_menu.add_command(label='Documentation',
-                              command=lambda: os.startfile('docs/'))
-        info_menu.add_command(label='About', command=self.message_about)
-        menubar.add_cascade(label='Help', menu=info_menu)
+        menubar.add_command(label='About', command=self.message_about)
         tk.Label(
             self,
             text='🗂 ClassifyIt 📎',
